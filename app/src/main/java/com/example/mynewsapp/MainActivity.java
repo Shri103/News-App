@@ -547,7 +547,7 @@ DatabaseReference reference;
         try{
             descriptions.clear();
             Log.d("In api1", "true");
-            newsLinkURL = new URL("https://newsapi.org/v2/top-headlines?country=us&category=" + category + "&apiKey=97da7c49a2a04224a19d685aff75d4a9");
+            newsLinkURL = new URL("https://newsapi.org/v2/top-headlines?country=us&category=" + category + "(Insert API Key here)");
             URLConnection connection = newsLinkURL.openConnection();
             connection.addRequestProperty("User-Agent", "Mozilla/5.0");
             InputStream is = connection.getInputStream();
@@ -623,7 +623,7 @@ DatabaseReference reference;
         try{
             descriptions.clear();
             Log.d("In api2", "true");
-            newsLinkURL = new URL("https://newsapi.org/v2/top-headlines?country=" + countryTyped + "&apiKey=97da7c49a2a04224a19d685aff75d4a9");
+            newsLinkURL = new URL("https://newsapi.org/v2/top-headlines?country=" + countryTyped + "(Insert API Key here)");
             URLConnection connection = newsLinkURL.openConnection();
             connection.addRequestProperty("User-Agent", "Mozilla/5.0");
             InputStream is = connection.getInputStream();
@@ -699,7 +699,7 @@ DatabaseReference reference;
             descriptions.clear();
             //"https://newsapi.org/v2/top-headlines?sources=" + newsSource + "&apiKey=97da7c49a2a04224a19d685aff75d4a9"
             Log.d("In api3", "true");
-            newsLinkURL = new URL("https://newsapi.org/v2/top-headlines?sources=" + newsSource + "&apiKey=97da7c49a2a04224a19d685aff75d4a9");
+            newsLinkURL = new URL("https://newsapi.org/v2/top-headlines?sources=" + newsSource + "(Insert API Key here)");
             URLConnection connection = newsLinkURL.openConnection();
             connection.addRequestProperty("User-Agent", "Mozilla/5.0");
             InputStream is = connection.getInputStream();
@@ -774,7 +774,7 @@ DatabaseReference reference;
         try{
             descriptions.clear();
             Log.d("In api4", "true");
-            newsLinkURL = new URL("https://newsapi.org/v2/top-headlines?q=" + personTyped + "&apiKey=97da7c49a2a04224a19d685aff75d4a9");
+            newsLinkURL = new URL("https://newsapi.org/v2/top-headlines?q=" + personTyped + "(Insert API Key here)");
             URLConnection connection = newsLinkURL.openConnection();
             connection.addRequestProperty("User-Agent", "Mozilla/5.0");
             InputStream is = connection.getInputStream();
